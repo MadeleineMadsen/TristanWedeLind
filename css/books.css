@@ -1,0 +1,138 @@
+/*---------- Section: Books ----------*/
+
+#Books {
+    h2 {
+        background-color: var(--colorAccent);
+        padding: 0.5rem 1rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem; 
+    }
+}
+
+/*---------- Layout ----------*/
+#Books .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+
+    article {
+        background-color: var(--colorSectionBg);
+        border: thin solid var(--colorBorder);
+        border-radius: 1rem;
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        gap: 1rem;
+
+        h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+/*---------- Responsitivitet ----------*/
+
+/* Mobil */
+@media (max-width: 600px) {
+    #Books {
+        h2 {
+            margin-top: 3.5rem;
+            margin-bottom: 0;
+        }
+
+        .grid {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            gap: 1rem;
+
+            article {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                h3, p {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+/* Lille tablet */
+@media (min-width: 601px) and (max-width: 767px) {
+    #Books {
+        h2 {
+            margin-top: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .grid {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            padding: 0;
+            gap: 1rem;
+
+            article {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: flex-start;
+                gap: 1rem;
+        
+                h3 {
+                    margin-bottom: 0.5rem;
+                }
+        
+                p {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/* Stor tablet */
+@media (min-width: 767px) and (max-width: 1200px) {
+    #Books {
+        h2 {
+            margin-top: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .grid {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            padding: 0;
+            gap: 1rem;
+
+            article {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: flex-start;
+                gap: 1rem;
+        
+                h3 {
+                    margin-bottom: 0.5rem;
+                }
+        
+                p {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}

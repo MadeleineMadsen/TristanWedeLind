@@ -1,0 +1,230 @@
+/*---------- Section: Contact ----------*/
+
+#Contact {
+    h2 {
+        background-color: var(--colorAccent);
+        padding: 0.5rem 1rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem; 
+    }
+}
+
+#Contact .contact_outer_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 2rem;
+
+    .contact_inner_container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /*---------- Victoria card ----------*/
+    .victoria {
+        display: flex;
+        background-color: var(--colorSectionBg);
+        border: thin solid var(--colorBorder);
+        border-radius: 1rem;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+
+        img {
+            width: 8rem;
+            border-radius: 5rem;
+            object-fit: cover;
+        }
+
+        h3 {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    /*---------- Elly card ----------*/
+    .elly_outer_container {
+        background-color: var(--colorSectionBg);
+        border: thin solid var(--colorBorder);
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+
+        .elly_inner_container {
+            display: flex;
+            background-color: var(--colorSectionBg);
+            border-radius: 1rem;
+            align-items: center;
+            padding: 1rem;
+            gap: 1rem;
+    
+            img {
+                width: 8rem;
+                border-radius: 5rem;
+                object-fit: cover;
+            }
+
+            h3 {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        /*---------- Formular ----------*/
+        form {
+
+            fieldset {
+                border-radius: 1rem;
+                border: thin solid;
+                padding: 1rem;
+            }
+
+            legend {
+                margin-bottom: 0.5rem;
+            }
+        
+            label {
+                width: 100%;
+            }
+        
+            input {
+                border: thin solid var(--colorBorder);
+                border-radius: 0.3rem;
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+                padding: 0.5rem;
+                width: 100%;
+            }
+        
+            textarea {
+                border: thin solid var(--colorBorder);
+                border-radius: 0.3rem;
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+                padding: 0.5rem;
+                width: 100%;
+            }
+
+            button {
+                background-color: var(--colorSecondary);
+                border: thin solid var(--colorBorder);
+                border-radius: 0.5rem;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    /*---------- Billede ----------*/
+    .contact_img {
+        flex: 1;
+
+        img {
+            max-height: 85vh;
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
+
+/*---------- Responsitivitet ----------*/
+
+/* Mobil */
+@media (max-width: 600px) {
+    #Contact {
+        h2 {
+            margin-bottom: 0;
+        }
+
+        .contact_outer_container {
+            flex-direction: column;
+            gap: 1rem;
+    
+            .contact_inner_container {
+                flex: 1;
+            }
+
+            /*---------- Victoria card ----------*/
+            .victoria {
+                flex-direction: column;
+        
+                img {
+                    width: 6rem;
+                    border-radius: 50%;
+                }
+        
+                .vic_text {
+                    margin-left: 1rem;
+                }
+            }
+        
+            /*---------- Elly card ----------*/
+            .elly_outer_container {
+                padding: 0.5rem;
+                margin-bottom: 0;
+        
+                .elly_inner_container {
+                    flex-direction: column;
+        
+                    img {
+                        width: 6rem;
+                        border-radius: 50%;
+                    }
+        
+                    .elly_text {
+                        margin-right: 4rem;
+                    }
+                }
+            }
+        
+            /*---------- Formular ----------*/
+            form fieldset {
+                padding: 0.5rem;
+            }
+        
+            /*---------- Billede ----------*/
+            .contact_img {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Lille tablet */
+@media (min-width: 601px) and (max-width: 767px) {
+    #Contact {
+        h2 {
+            margin-top: 3.5rem;
+        }
+
+        .contact_outer_container {
+            flex-direction: column;
+            padding: 0;
+            gap: 1rem;
+    
+            .contact_inner_container {
+                flex: 1;
+            }
+        }
+
+        .contact_img {
+            display: none;
+        }
+    }
+}
+
+/* Stor tablet */
+@media (min-width: 768px) and (max-width: 1200px) {
+    #Contact {
+        .contact_outer_container {
+            padding: 0;
+        }
+
+        h2 {
+            margin-top: 3.5rem;
+        }
+    }
+}

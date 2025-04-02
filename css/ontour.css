@@ -1,0 +1,142 @@
+/*---------- Section: On tour ----------*/
+
+#OnTour {
+    h2 {
+        background-color: var(--colorAccent);
+        padding: 0.5rem 1rem;
+        margin-bottom: 1rem; 
+    }
+    
+    img {
+        width: 100%;
+        max-height: 50vh;
+        object-fit: cover;
+    }
+}
+
+/*---------- Layout ----------*/
+#OnTour .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+
+    div {
+        background-color: var(--colorSectionBg);
+        border: thin solid var(--colorBorder);
+        border-radius: 1rem;
+        padding: 1rem;
+
+        .mic {
+            width: 3%;
+            height: auto;
+            display: inline;
+            margin-right: 0.2rem;
+        }
+
+        .date {
+            font-size: 0.9rem;
+        }
+
+        .event {
+            margin: 0.5rem 0;
+        }
+
+        .role {
+            font-weight: bolder;
+            margin-bottom: 0.5rem;
+        }
+
+        .location {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+/*---------- Responsitivitet ----------*/
+
+/* Mobil */
+@media (max-width: 600px) {
+    #OnTour img {
+        margin-bottom: 0.5rem;
+    }
+    
+    #OnTour .grid {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding: 0;
+        gap: 1rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .mic {
+                width: 1rem;
+                height: auto;
+                display: inline;
+                margin-right: 0.2rem;
+            }
+        }
+    }
+}
+
+/* Lille tablet */
+@media (min-width: 601px) and (max-width: 767px) {
+    #OnTour img {
+        margin-bottom: 0.5rem;
+    }
+
+    #OnTour .grid {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding: 0;
+        gap: 1rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .mic {
+                width: 1rem;
+                height: auto;
+                display: inline;
+                margin-right: 0.2rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* Stor tablet */
+@media (min-width: 768px) and (max-width: 1200px) {
+    #OnTour img {
+        margin-bottom: 0.5rem;
+    }
+
+    #OnTour .grid {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding: 0;
+        gap: 1rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .mic {
+                width: 1rem;
+                height: auto;
+                display: inline;
+                margin-right: 0.2rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+
+:root {
+    --colorPrimary: black;
+    --colorSecondary: white;
+    --colorAccent: rgb(166, 228, 255);
+    --colorSectionBg: rgb(231, 243, 254);
+    --colorButton: rgb(8, 21, 78);
+    --colorBorder: rgb(141, 141, 141);
+
+    --colorTextOne: black;
+    --colorTextTwo: white;
+
+    --fontMain: 'Montserrat', Arial, Helvetica, sans-serif;
+    --fontTitle: 'Radley', Arial, Helvetica, sans-serif;
+}
+
